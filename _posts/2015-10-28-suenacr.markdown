@@ -1,0 +1,22 @@
+---
+title: SuenaCR
+subtitle: Plataforma de música nacional
+layout: default
+modal-id: 3
+date: 2015-10-20
+img: suena-cr-big.jpg
+thumbnail: suena-cr.jpg
+alt: SuenaCR
+publicacion: Enero 2013
+client: Claro
+link: http://suena.cr/
+agencia: Agencia Contenido
+link-agencia: http://agenciacontenido.com
+---
+
+
+**Suena CR** es una plataforma de música de la telefónica Claro. En este sitio, artistas pueden hacerse un perfil, subir su música y los usuarios pueden votar por sus canciones favoritas. Semanalmente se publica un Top 10 de las canciones más votadas.
+
+También cuenta con un calendario de eventos y permite a los usuarios registrarse y reservar entradas.
+
+Para este proyecto lideré la programación y estuve involucrado en el diseño.

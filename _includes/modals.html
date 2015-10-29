@@ -10,27 +10,27 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
+                    <div class="col-lg-6">
+                        <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                        <div class="text-center">
+                            <a href="{{ post.link }}" title="Visite {{ post.title }}" class="btn btn-primary" target="blank">Visite {{ post.title }}</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
                             <p>{{ post.description }}</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            <dl>
+                                <dt>Cliente</dt>
+                                <dd><a href="{{ post.link }}">{{ post.client }}</a></dd>
+                                <dt>Publicación</dt>
+                                <dd>{{ post.publicacion }}</dd>
+                                <dt>Agencia</dt>
+                                <dd><a href="{{ post.link-agencia }}" target="_blank" title="{{ post.agencia }}">{{ post.agencia }}</a></dd>
+                            </dl>
+                            <div>{{ post.content }}</div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
                         </div>
                     </div>
                 </div>

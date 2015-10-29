@@ -266,7 +266,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/header-bg.jpg);
+    background-image: url(../img/fondo1.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -729,6 +729,9 @@ footer span.copyright {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 40px;
 }
+footer span.copyright.contacto{
+    font-weight: normal;
+}
 
 footer ul.quicklinks {
     margin-bottom: 0;
@@ -769,13 +772,15 @@ ul.social-buttons li a:active {
 .btn:active:focus {
     outline: 0;
 }
+.modal-body{
+    padding-top:0;
+}
 
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
     border-radius: 0;
-    text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -783,11 +788,12 @@ ul.social-buttons li a:active {
 
 .portfolio-modal .modal-content h2 {
     margin-bottom: 15px;
+    margin-top: 0;
     font-size: 3em;
 }
 
 .portfolio-modal .modal-content p {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .portfolio-modal .modal-content p.item-intro {
@@ -861,4 +867,13 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
+}
+
+.e-mail:before {
+            content: attr(data-website) "\0040" attr(data-user);
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+.contact-info{
+    color:#fff;
 }
