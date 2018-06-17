@@ -8,6 +8,8 @@ body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #{{ site.color.secondary-dark }};
+    padding:0;
+    min-width:100%;
 }
 
 .text-muted {
@@ -266,7 +268,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/fondo1.jpg);
+    background: url(../img/fondo1.jpg) no-repeat center center fixed;
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -867,6 +869,7 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.color.primary }};
+    width:100%;
 }
 
 .e-mail:before {
@@ -876,4 +879,14 @@ body {
         }
 .contact-info{
     color:#fff;
+}
+section{
+    min-width:100%;
+}
+@media screen and (max-width: 600px) {
+    header .intro-text .intro-heading{
+        font-size:35px;
+        max-width:80%;
+        margin:0 auto 1em auto;
+    }
 }

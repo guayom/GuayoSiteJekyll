@@ -1,3 +1,10 @@
 User-agent: *
 Disallow: /tmp/
 Disallow: /clientes/
+Disallow: /bin/
+Disallow: /cache/
+Disallow: /cgi-bin/
+Disallow: /cli/
+Disallow: /guayo/
+Disallow: /nest/
+Disallow: /quotes/
